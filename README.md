@@ -28,11 +28,11 @@ It uses **Pandas, NumPy, Matplotlib, and Seaborn** to clean and visualize stock 
 4. **Simple Stock Prediction**
    - Checks if dataset has a `Close` column
    - Predicts **future trend** based on last 5 closing prices
-   - Prints **last price, predicted price, and direction (📈 UP or 📉 DOWN)**
+   - Prints **last price, predicted price, and direction ( UP or  DOWN)**
 
 ---
 
-## 📦 Requirements
+## Requirements
 
 The csv file should be in the same folder where the program is saved
 Install dependencies before running:
