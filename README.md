@@ -34,6 +34,7 @@ It uses **Pandas, NumPy, Matplotlib, and Seaborn** to clean and visualize stock 
 
 ## 📦 Requirements
 
+The csv file should be in the same folder where the program is saved
 Install dependencies before running:
 
 ```bash
