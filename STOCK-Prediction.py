@@ -147,7 +147,7 @@ elif choice1==4:
         actual = prices.iloc[-1]
         prediction = simple_predict(prices)
 
-        direction = "UP 📈" if prediction > actual else "DOWN 📉"
+        direction = "UP" if prediction > actual else "DOWN"
         print(f"Last Price: {actual:.2f} | Predicted: {prediction:.2f} | Trend: {direction}")
 
 
@@ -155,4 +155,5 @@ elif choice1==4:
         main()
 
 else:
+
     print("WRONG CHOICE MADE")
