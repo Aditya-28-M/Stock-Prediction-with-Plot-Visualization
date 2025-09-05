@@ -117,7 +117,7 @@ def plots_with_outliers_removed(df):
 df=pd.read_csv("stock-prediction.csv")
 print("\nColumns are = [Date, Open, High, Low, Close, Adj Close, Volume]\n ")
 
-print("OPTIONS:\n 1.Print first N Rows\n 2.Print last N Rows\n 3.Show Plots (Outliers Removed)\n 4.Future Stock Prediction\n")
+print("OPTIONS:\n 1.Print first N Rows\n 2.Print last N Rows\n 3.Information\n 4.Description\n 5.Show Plots (Outliers Removed)\n 6.Future Stock Prediction\n")
 choice1=int(input("Enter Your Choice: "))
 
 if choice1==1:
@@ -127,12 +127,18 @@ if choice1==1:
 elif choice1==2:
     N = int(input("Enter number of rows to be printed: "))
     print(tail(df, N))
-
+    
 elif choice1==3:
+    information(df)
+
+elif choice1==4:
+    description(df)
+
+elif choice1==5:
     print("\nOutlier Removal :\n")
     plots_with_outliers_removed(df)
 
-elif choice1==4:
+elif choice1==6:
     def check_Close_column():
         if "Close" not in df.columns:
             raise ValueError("CSV file must have a 'Close' column.")
@@ -156,3 +162,4 @@ elif choice1==4:
 else:
 
     print("WRONG CHOICE MADE")
+
