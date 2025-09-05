@@ -1,4 +1,4 @@
-# Stock-Prediction-with-Plot-Visualization
+`# Stock-Prediction-with-Plot-Visualization
 
 This Python program provides tools for **stock data exploration, visualization, outlier removal, and simple prediction**.  
 It uses **Pandas, NumPy, Matplotlib, and Seaborn** to clean and visualize stock market datasets.
@@ -35,7 +35,7 @@ It uses **Pandas, NumPy, Matplotlib, and Seaborn** to clean and visualize stock 
 ## Requirements
 
 The csv file should be in the same folder where the program is saved
-Install dependencies before running:
+ - Install dependencies before running:
 
 ```bash
 pip install numpy pandas matplotlib seaborn
