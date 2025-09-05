@@ -87,14 +87,14 @@ def plots_with_outliers_removed(df):
 
     elif choice==3:
         print("Columns available to be selected as x_axis = [Open, High, Low, Close, Adj Close, Volume]\n")
-        x_axis = input("Enter Column Name on x_axis: ")
+        y_axis = input("Enter Column Name on x_axis: ")
 
-        if x_axis in col_name:
+        if y_axis in col_name:
             plt.figure(figsize=(10, 5))
-            sb.lineplot(data=df, x="Date", y=x_axis, color="g",errorbar=('ci',False))
+            sb.lineplot(data=df, x="Date", y=y_axis, color="g",errorbar=('ci',False))
             plt.title("Box-Plot")
             plt.xlabel("Date")
-            plt.ylabel(x_axis)
+            plt.ylabel(y_axis)
             plt.show()
 
         else:
@@ -154,4 +154,5 @@ elif choice1==4:
         main()
 
 else:
+
     print("WRONG CHOICE MADE")
